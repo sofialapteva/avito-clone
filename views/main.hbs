@@ -1,0 +1,15 @@
+{{#if location}}<h6>Все объявления в {{location}}</h6>{{/if}}
+<div style='display:grid; grid-template-columns:  1fr 1fr 1fr; width: 70%'>
+{{#each posts}}
+{{#each this.goods}}
+<div style='width:260px; overflow:hidden; margin: 10px'>
+  <img src={{this.image}} height=260px width=fit-content>
+  <h3>{{this.title}}</h3>
+  <div style='font-weight:700'>{{this.price}} рублей</div>
+  <div>{{this.description}}</div>
+  <div>{{this.location}}</div>
+
+</div>
+{{/each}}
+{{/each}}
+</div>

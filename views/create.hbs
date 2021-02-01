@@ -1,0 +1,29 @@
+  <form name='newPostForm' class="form"  style='' action='/create' method='POST'>
+  <label>Категория</label>
+    <select class="form-control" name='categorySelect'>
+      <option>Любая категория</option>
+      <option>Транспорт</option>
+      <option>Недвижимость</option>
+      <option>Работа</option>
+      <option>Личные вещи</option>
+      <option>Услуги</option>
+    </select>
+    <label>Город</label>
+    <select class="form-control" name='locationSelect'>
+      <option>Москва</option>
+      <option>Санкт-Петербург</option>
+      <option>Волгоград</option>
+      <option>Самара</option>
+      <option>Новосибирск</option>
+    </select>
+    <label>Название товара</label>
+    <input  class="form-control mr-sm-2" type='text' placeholder="Название" style='min-width:200px; width: 100%' name='title' required>
+    <label>Описание товара</label>
+    <textarea  name='description' class="form-control mr-sm-2" type='text' placeholder="Описание" cols=20 rows=10></textarea>
+    <label>Ссылка на изображение товара</label>
+    <input  class="form-control mr-sm-2" type='text' placeholder="Ссылка" style='min-width:200px; width: 100%' name='image'>
+    <label>Стоимость</label>
+    <input  class="form-control mr-sm-2" type='text' placeholder="Стоимость" style='min-width:200px; width: 100%' name='price' required>
+  
+    <button class="btn btn-outline-primary  my-sm-0" type="submit">Создать объявление</button>
+  </form>

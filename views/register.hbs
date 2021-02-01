@@ -1,0 +1,12 @@
+{{#if warning}}
+<p style='color:red'>
+  Чтобы подать объявление, вам необходимо зарегистрироваться или войти
+</p>
+{{/if}}
+  <form name='loginForn' class="form"  style='' action='/register' method='POST'>
+    <label>Логин</label>
+    <input  class="form-control mr-sm-2" type='text' placeholder="Логин" style='min-width:200px; width: 100%' name='login' required>
+    <label>Пароль</label>
+    <input  name='password' class="form-control mr-sm-2" type='password' placeholder="Пароль">
+    <button class="btn btn-outline-primary  my-sm-0" type="submit">Войти</button>
+  </form>

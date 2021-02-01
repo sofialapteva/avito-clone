@@ -1,0 +1,15 @@
+{{#if location}}<h6>Все объявления по запросу в {{location}}</h6>{{/if}}
+<div style='display:grid; grid-template-columns:  1fr 1fr 1fr; width: 70%'>
+{{#if posts}}
+{{#each posts}}
+<div style='width:260px; overflow:hidden; margin: 10px'>
+  <img src={{this.image}} height=260px>
+  <h3>{{this.title}}</h3>
+  <p>{{this.description}}</p>
+  <p>{{this.location}}</p>
+</div>
+{{/each}}
+</div>
+{{else}}
+По данному запросу нет результатов
+{{/if}}
